@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Essential JS 2" />
+    <meta name="author" content="Syncfusion" />
+    <link rel="shortcut icon" href="../resources/favicon.ico" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--style reference from node_modules/@syncfusion/ej2/-->
+    <link href="../resources/component.css" rel="stylesheet" />
+    <link href="../prop/styles.css" rel="stylesheet" />
+
+    <script src="../../../../../node_modules/requirejs/require.js" data-main="columns.js"></script>
+    <script src="../../require.config.js"></script>
+	<script src="../../../Common/util.js"></script>
+    <style>
+        .form-group.col-md-6 {
+            width: 250px;
+        }
+        #ShipAddress{
+            resize: vertical;
+        }
+    </style>
+    <script id='dialogtemplate' type="text/x-template">
+        <div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper">
+                        <input id="OrderID" name="OrderID" type="text" value=${if(OrderID == null)} '' ${else} ${OrderID} ${/if} ${if(isAdd)} ${else} disabled ${/if} />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="OrderID">Order ID</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper">
+                        <input id="EmployeeID" name="EmployeeID" type="text" value=${if(EmployeeID == null)} '' ${else} ${EmployeeID} ${/if} />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="EmployeeID">Employee ID</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input name="Freight" id="Freight" value=${if(Freight == null)} '' ${else} ${Freight} ${/if} /> 
+                </div>
+                <div class="form-group col-md-6">
+                    <input name="OrderDate" id="OrderDate" > 
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" name="ShipCountry" id="ShipCountry" value=${if(ShipCountry == null)} '' ${else} ${ShipCountry} ${/if} />
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" name="ShipCity" id="ShipCity" value=${if(ShipCity == null)} '' ${else} ${ShipCity} ${/if} />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper">
+                        <textarea type="text" name="ShipAddress" id="ShipAddress" value=${if(ShipAddress == null)} '' ${else} ${ShipAddress} ${/if}>${if(ShipAddress == null)}  ${else} ${ShipAddress} ${/if}</textarea>
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="ShipAddress">Ship Address</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="checkbox" name="Verified" id="Verified" ${if(isAdd)} '' ${else} checked ${/if} />
+                </div>
+            </div>
+        </div>
+    </script>    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="Grid"></div>
+            </div>
+            <div class="col-md-4 panel">
+                <div class="prop">
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+
+</html>

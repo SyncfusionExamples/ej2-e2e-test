@@ -1,0 +1,49 @@
+{
+    "name": "ej2-grids-e2e",
+    "version": "1.0.0",
+    "description": "E2E for Essential JS2 Grid",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "gulp start"
+    },
+    "dependencies": {
+        "@syncfusion/ej2-base": "*",
+        "@syncfusion/ej2-data": "*",
+        "@syncfusion/ej2-navigations": "*",
+        "@syncfusion/ej2-inputs": "*",
+        "@syncfusion/ej2-calendars": "*",
+        "@syncfusion/ej2-dropdowns": "*",
+        "@syncfusion/ej2-popups": "*",
+        "@syncfusion/ej2-buttons": "*",
+        "@syncfusion/ej2-lists": "*",
+        "@syncfusion/ej2-js-es5": "*",
+        "@syncfusion/ej2-excel-export": "*",
+        "@syncfusion/ej2-pdf-export": "*",
+        "@syncfusion/ej2-file-utils": "*",
+        "@syncfusion/ej2-compression": "*",
+        "@syncfusion/ej2-grids": "*"
+    },
+    "devDependencies": {
+        "@types/chai": "^3.4.28",
+        "@types/jasmine": "^2.2.29",
+        "@types/jasmine-ajax": "^3.1.27",
+        "@types/requirejs": "^2.1.26",
+        "browser-sync": "^2.11.2",
+        "gulp": "^3.9.1",
+        "gulp-tslint": "^7.0.1",
+        "gulp-typedoc": "^2.0.0",
+        "gulp-typescript": "^2.13.0",
+        "gulp-protractor": "^4.1.0",
+        "pix-diff": "^2.0.0",
+        "protractor": "5.3.2",
+        "run-sequence": "^1.0.2",
+        "shelljs": "^0.7.0",
+        "require-dir": "^0.3.2",
+        "requirejs": "^2.2.0",
+        "typescript": "^3.0.3",
+        "public-ip": "^2.3.5",
+        "webpack": "2.5.1",
+        "webpack-stream": "^3.2.0"
+    }
+}
