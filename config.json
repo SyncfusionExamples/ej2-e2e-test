@@ -1,0 +1,9 @@
+{
+    "components": [
+        "button",
+        "check-box",
+        "radio-button",
+        "switch"
+    ],
+    "browsers": ["chrome"]
+}
