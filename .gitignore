@@ -5,7 +5,6 @@ public/
 coverage/
 index.js
 index.d.ts
-gulpfile.js
 src/**/*.js
 spec/**/*.js
 demos/**/*.js
